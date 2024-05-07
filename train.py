@@ -1,4 +1,4 @@
-import pycaret.classification as pc
+from pycaret.classification import *
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -28,8 +28,8 @@ for color in dir_identifiers:
 # Juntando as colunas dos dataframes de única coluna (canal)
 data = pd.concat([channels[color] for color in channels], axis=1)
 
-setup = pc.setup(data, target='gt')
-best_model = pc.compare_models()
-pc.save_model(best_model, 'modelo_bom')
+setup = setup(data, target='gt')
+best_model = compare_models()
+save_model(best_model, 'modelo_bom')
 
-holdout_pred = pc.predict_model(best_model)
+holdout_pred = predict_model(best_model)
