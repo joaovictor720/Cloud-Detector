@@ -25,7 +25,7 @@ color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_training/train_"
 i = 0
 pivot_color = 'green'
 good_images = []
-offset = 1996
+offset = 2222
 
 # Extraindo os identificadores das imagens
 dir = os.listdir(f"/home/jv/Documents/38cloud/38-Cloud_training/train_{pivot_color}")

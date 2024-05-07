@@ -7,8 +7,8 @@ import tifffile as tiff
 loaded_model = load_model('modelo_bom')
 
 # Define directories
-colors = ['blue', 'red', 'green', 'nir', 'gt']
-color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_training/train_"
+colors = ['blue', 'red', 'green', 'nir']
+color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_test/test_"
 
 # Create dataframes for each color channel and mask
 channels = {
@@ -20,19 +20,18 @@ channels = {
 }
 
 # Load the new image and preprocess it
-image_name = "your_image_name_without_extension"
+target_image = "_patch_169_9_by_9_LC08_L1TP_029044_20160720_20170222_01_T1.TIF"
 for color in colors:
-    image = tiff.imread(f"{color_dir_prefix}{color}/{color}{image_name}")
+    image = tiff.imread(f"{color_dir_prefix}{color}/{color}{target_image}")
     channels[color] = pd.DataFrame(image.reshape(-1, 1), columns=[color])
 
 # Concatenate the dataframes into a single dataframe
 data = pd.concat([channels[color] for color in channels], axis=1)
 
+print("data")
+print(data)
+
 # Use the loaded model to make predictions
 predictions = predict_model(loaded_model, data)
 
-# Extract the predicted cloud coverage from the predictions
-cloud_coverage = predictions['Label']
-
-# Display or use the predicted cloud coverage
-print(cloud_coverage)
+print(predictions['prediction_label'])
