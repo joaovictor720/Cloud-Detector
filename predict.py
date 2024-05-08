@@ -54,7 +54,7 @@ def load_image(img_id, base_dir="/home/jv/Documents/38cloud/38-Cloud_training/tr
 # Retorna a imagem original com os retângulos desenhados, e as coordenadas dos retângulos
 # da máscara e do ground-truth
 def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Documents/38cloud/38-Cloud_training", extension="TIF"):
-	mask_path = f"{base_dir}/masks/mask{mask_id}.{extension}"
+	mask_path = f"./masks/mask{mask_id}.{extension}"
 	gt_path = f"{base_dir}/train_gt/gt{gt_id}.{extension}"
 	original_path = f"{base_dir}/train_red/red{original_id}.{extension}"
 
@@ -163,8 +163,8 @@ def match_bbs(gt_boxes, pred_boxes, IOU_THRESH=0.5):
     return idx_gt_actual[sel_valid], idx_pred_actual[sel_valid], ious_actual[sel_valid], label 
 
 # Load the trained model
-original_image_id = "_patch_267_13_by_15_LC08_L1TP_029040_20160720_20170222_01_T1"
-loaded_model = load_model('modelo_bom_2img')
+original_image_id = "_patch_257_13_by_17_LC08_L1TP_002053_20160520_20170324_01_T1"
+loaded_model = load_model('./models/model_14_Balanced')
 
 # Concatenate the dataframes into a single dataframe
 loaded_image, original_height, original_width = load_image(original_image_id)
@@ -191,15 +191,17 @@ matrix_3channel[:, :, 2] = binarized_matrix
 
 # Salvando a máscara gerada
 base_dir = "/home/jv/Documents/38cloud/38-Cloud_training"
-cv2.imwrite(f"{base_dir}/masks/mask{original_image_id}.TIF", matrix_3channel)
+cv2.imwrite(f"./masks/mask{original_image_id}.TIF", matrix_3channel)
 
 bounded_image, ious, pred_truths = handle_bbs_from_image(gt_id=original_image_id, mask_id=original_image_id, original_id=original_image_id)
 
 print("IoUs:")
 print(ious)
 
-# Display the image with bounding boxes
-print("SALVANDO A IMAGEM COM BOUNDING BOXES")
-cv2.imwrite('bounded_image.TIF', bounded_image)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+# Salvando a imagem contendo os bounding boxes
+cv2.imwrite(f'./bounded/bounded{original_image_id}.TIF', bounded_image)
+
+# Salvando os IoUs
+with open(f'./iou/iou{original_image_id}.txt', 'w') as file:
+    for item in ious:
+        file.write(f"{item} ")
