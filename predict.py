@@ -54,7 +54,7 @@ def load_image(img_id, base_dir="/home/jv/Documents/38cloud/38-Cloud_training/tr
 # Retorna a imagem original com os retângulos desenhados, e as coordenadas dos retângulos
 # da máscara e do ground-truth
 def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Documents/38cloud/38-Cloud_training", extension="TIF"):
-	mask_path = f"./masks/mask{mask_id}.{extension}"
+	mask_path = f"./masks/{model_name}/mask{mask_id}.{extension}"
 	gt_path = f"{base_dir}/train_gt/gt{gt_id}.{extension}"
 	original_path = f"{base_dir}/train_red/red{original_id}.{extension}"
 
@@ -157,7 +157,7 @@ def match_bbs(gt_boxes, pred_boxes, IOU_THRESH=0.5):
     return idx_gt_actual[sel_valid], idx_pred_actual[sel_valid], ious_actual[sel_valid], label 
 
 # Load the trained model
-model_name = "model_2img"
+model_name = "model_14_Balanced"
 original_image_id = "_patch_175_9_by_7_LC08_L1TP_029040_20160720_20170222_01_T1"
 loaded_model = load_model(f'./models/{model_name}')
 
@@ -186,7 +186,7 @@ matrix_3channel[:, :, 2] = binarized_matrix
 
 # Salvando a máscara gerada
 base_dir = "/home/jv/Documents/38cloud/38-Cloud_training"
-cv2.imwrite(f"./masks/mask{original_image_id}.TIF", matrix_3channel)
+cv2.imwrite(f"./masks/{model_name}/mask{original_image_id}.TIF", matrix_3channel)
 
 bounded_image, ious, pred_truths = handle_bbs_from_image(gt_id=original_image_id, mask_id=original_image_id, original_id=original_image_id)
 
@@ -194,7 +194,7 @@ print("IoUs:")
 print(ious)
 
 # Salvando a imagem contendo os bounding boxes
-cv2.imwrite(f"./bounded/{model_name}/bounded{original_image_id}.TIF", bounded_image)
+cv2.imwrite(f"./bounded/{model_name}/bounded{original_image_id}.png", bounded_image)
 
 # Salvando os IoUs
 with open(f"./iou/{model_name}/iou{original_image_id}.txt", 'w') as file:
