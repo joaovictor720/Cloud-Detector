@@ -6,10 +6,7 @@ import matplotlib.pyplot as plt
 import cv2
 import scipy
 
-def bb_intersection_over_union(boxA, boxB):
-	# https://www.pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/
-	# ^^ corrected.
-		
+def bb_intersection_over_union(boxA, boxB):	
 	# Determine the (x, y)-coordinates of the intersection rectangle
 	xA = max(boxA[0], boxB[0])
 	yA = max(boxA[1], boxB[1])
@@ -19,8 +16,8 @@ def bb_intersection_over_union(boxA, boxB):
 	interW = xB - xA + 1
 	interH = yB - yA + 1
 
-	# Correction: reject non-overlapping boxes
-	if interW <=0 or interH <=0 :
+	# Eliminando bbs que não se sobrepõem
+	if interW <= 0 or interH <= 0 :
 		return -1.0
 
 	interArea = interW * interH
@@ -64,7 +61,9 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 	# Lendo as máscaras
 	mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
 	gt_image = cv2.imread(gt_path, cv2.IMREAD_GRAYSCALE)
-	original_image = cv2.imread(original_path, cv2.IMREAD_GRAYSCALE)
+	original_image = cv2.imread(original_path, cv2.IMREAD_COLOR)
+
+	print(original_image[0])
 
 	# Obtendo os contornos da máscara e gabarito
 	mask_contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -93,18 +92,14 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 		gt_boxes.append(cv_bb_to_iou_bb(bb))
 
 	# Obtendo os matches e IoUs entre os bounding boxes
-	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes), IOU_THRESH=0.5)
+	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes), IOU_THRESH=0.01)
 
 	# Desenhando os pares previsão-gt na imagem
-	print(len(gt_boxes_cv))
-	print(len(mask_boxes_cv))
-	print(matched_gt_idxs)
-	print(matched_mask_idxs)
 	for i in range(len(matched_gt_idxs)):
 		bb = mask_boxes_cv[matched_gt_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 2) # Desenhando um bb de pred
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 255), 1) # Desenhando um bb de pred
 		bb = gt_boxes_cv[matched_mask_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 0, 255), 1) # Desenhando um bb de gt
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 1) # Desenhando um bb de gt
 
 	return original_image, ious, pred_truths
 
@@ -174,9 +169,6 @@ loaded_model = load_model('modelo_bom_2img')
 # Concatenate the dataframes into a single dataframe
 loaded_image, original_height, original_width = load_image(original_image_id)
 
-print("data")
-print(loaded_image)
-
 # Use the loaded model to make predictions
 predicted_df = predict_model(loaded_model, loaded_image)
 
@@ -207,7 +199,7 @@ print("IoUs:")
 print(ious)
 
 # Display the image with bounding boxes
-print("SALVANDO A IMAGEM COM OS BOUNDING BOXES PREVISTOS")
+print("SALVANDO A IMAGEM COM BOUNDING BOXES")
 cv2.imwrite('bounded_image.TIF', bounded_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
