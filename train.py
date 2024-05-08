@@ -19,7 +19,8 @@ channels = {
 }
 
 feed_num = 1
-color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_training/train_"
+#color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_training/train_"
+color_dir_prefix = "C:\\Documentos\\38cloud\\38-Cloud_training\\train_"
 
 # Iterar sobre os diretórios e arquivos
 i = 0
@@ -28,7 +29,8 @@ good_images = []
 offset = 2222
 
 # Extraindo os identificadores das imagens
-dir = os.listdir(f"/home/jv/Documents/38cloud/38-Cloud_training/train_{pivot_color}")
+#dir = os.listdir(f"/home/jv/Documents/38cloud/38-Cloud_training/train_{pivot_color}")
+dir = os.listdir(f"C:\\Documentos\\38cloud\\38-Cloud_training\\train_{pivot_color}")
 for i in range(offset, len(dir)):
 	good_images.append(dir[i].replace(pivot_color, "")) # Extraindo os identificadores das imagens
 	if i >= feed_num:

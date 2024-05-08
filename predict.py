@@ -9,7 +9,8 @@ loaded_model = load_model('modelo_bom')
 
 # Define directories
 colors = ['blue', 'red', 'green', 'nir']
-color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_test/test_"
+#color_dir_prefix = "/home/jv/Documents/38cloud/38-Cloud_test/test_"
+color_dir_prefix = "C:\\Documentos\\38cloud\\38-Cloud_test\\test_"
 
 # Create dataframes for each color channel and mask
 channels = {
