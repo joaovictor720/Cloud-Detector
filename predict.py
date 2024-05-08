@@ -66,7 +66,7 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 	gt_image = cv2.imread(gt_path, cv2.IMREAD_GRAYSCALE)
 	original_image = cv2.imread(original_path, cv2.IMREAD_GRAYSCALE)
 
-	# Find contours in the cloud mask image
+	# Obtendo os contornos da máscara e gabarito
 	mask_contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 	gt_contours, _ = cv2.findContours(gt_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -75,6 +75,9 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 	mask_boxes_cv = []
 	for contour in mask_contours:
 		bb = cv2.boundingRect(contour)
+		# bb[2] é width (largura) e bb[3] é height (altura)
+		if bb[2] * bb[3] < 22:
+			continue # Excluindo bounding boxes muito pequenos apenas para avaliação
 		mask_boxes_cv.append(bb)
 		mask_boxes.append(cv_bb_to_iou_bb(bb))
 	
@@ -83,18 +86,25 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 	gt_boxes_cv = []
 	for contour in gt_contours:
 		bb = cv2.boundingRect(contour)
+		# bb[2] é width (largura) e bb[3] é height (altura)
+		if bb[2] * bb[3] < 22:
+			continue # Excluindo bounding boxes muito pequenos apenas para avaliação
 		gt_boxes_cv.append(bb)
 		gt_boxes.append(cv_bb_to_iou_bb(bb))
 
 	# Obtendo os matches e IoUs entre os bounding boxes
-	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes))
+	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes), IOU_THRESH=0.5)
 
 	# Desenhando os pares previsão-gt na imagem
+	print(len(gt_boxes_cv))
+	print(len(mask_boxes_cv))
+	print(matched_gt_idxs)
+	print(matched_mask_idxs)
 	for i in range(len(matched_gt_idxs)):
-		bb = mask_boxes_cv[matched_mask_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 1) # Desenhando um bb de pred
-		bb = gt_boxes_cv[matched_gt_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 0, 255), 2) # Desenhando um bb de gt
+		bb = mask_boxes_cv[matched_gt_idxs[i]]
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 2) # Desenhando um bb de pred
+		bb = gt_boxes_cv[matched_mask_idxs[i]]
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 0, 255), 1) # Desenhando um bb de gt
 
 	return original_image, ious, pred_truths
 
