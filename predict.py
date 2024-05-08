@@ -157,8 +157,9 @@ def match_bbs(gt_boxes, pred_boxes, IOU_THRESH=0.5):
     return idx_gt_actual[sel_valid], idx_pred_actual[sel_valid], ious_actual[sel_valid], label 
 
 # Load the trained model
-original_image_id = "_patch_189_10_by_9_LC08_L1TP_002053_20160520_20170324_01_T1"
-loaded_model = load_model('./models/model_14_Balanced')
+model_name = "model_2img"
+original_image_id = "_patch_175_9_by_7_LC08_L1TP_029040_20160720_20170222_01_T1"
+loaded_model = load_model(f'./models/{model_name}')
 
 # Concatenate the dataframes into a single dataframe
 loaded_image, original_height, original_width = load_image(original_image_id)
@@ -193,9 +194,9 @@ print("IoUs:")
 print(ious)
 
 # Salvando a imagem contendo os bounding boxes
-cv2.imwrite(f'./bounded/bounded{original_image_id}.TIF', bounded_image)
+cv2.imwrite(f"./bounded/{model_name}/bounded{original_image_id}.TIF", bounded_image)
 
 # Salvando os IoUs
-with open(f'./iou/iou{original_image_id}.txt', 'w') as file:
+with open(f"./iou/{model_name}/iou{original_image_id}.txt", 'w') as file:
     for item in ious:
         file.write(f"{item} ")
