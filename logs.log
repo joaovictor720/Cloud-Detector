@@ -11206,3 +11206,693 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2024-05-07 20:52:03,817:INFO:Preloading libraries
 2024-05-07 20:52:03,817:INFO:Set up data.
 2024-05-07 20:52:03,821:INFO:Set up index.
+2024-05-07 21:00:50,760:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:00:50,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:00:50,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:00:50,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:00:51,220:INFO:Initializing load_model()
+2024-05-07 21:00:51,220:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:00:51,290:INFO:Initializing predict_model()
+2024-05-07 21:00:51,290:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x76b0ee523340>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x76b0ee4c53f0>)
+2024-05-07 21:00:51,290:INFO:Checking exceptions
+2024-05-07 21:00:51,290:INFO:Preloading libraries
+2024-05-07 21:00:51,290:INFO:Set up data.
+2024-05-07 21:00:51,299:INFO:Set up index.
+2024-05-07 21:01:15,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:01:15,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:01:15,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:01:15,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:01:16,003:INFO:Initializing load_model()
+2024-05-07 21:01:16,003:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:01:16,071:INFO:Initializing predict_model()
+2024-05-07 21:01:16,071:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7bc87b73b2e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7bc87b8d93f0>)
+2024-05-07 21:01:16,071:INFO:Checking exceptions
+2024-05-07 21:01:16,071:INFO:Preloading libraries
+2024-05-07 21:01:16,071:INFO:Set up data.
+2024-05-07 21:01:16,079:INFO:Set up index.
+2024-05-07 21:04:40,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:04:40,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:04:40,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:04:40,853:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:04:41,310:INFO:Initializing load_model()
+2024-05-07 21:04:41,310:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:04:41,375:INFO:Initializing predict_model()
+2024-05-07 21:04:41,376:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x76e5f1d8b310>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x76e5f1f2d3f0>)
+2024-05-07 21:04:41,376:INFO:Checking exceptions
+2024-05-07 21:04:41,376:INFO:Preloading libraries
+2024-05-07 21:04:41,376:INFO:Set up data.
+2024-05-07 21:04:41,382:INFO:Set up index.
+2024-05-07 21:05:30,014:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:30,014:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:30,014:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:30,014:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:30,461:INFO:Initializing load_model()
+2024-05-07 21:05:30,461:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:05:30,530:INFO:Initializing predict_model()
+2024-05-07 21:05:30,530:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x707b58b3f340>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x707b58ce13f0>)
+2024-05-07 21:05:30,530:INFO:Checking exceptions
+2024-05-07 21:05:30,530:INFO:Preloading libraries
+2024-05-07 21:05:30,531:INFO:Set up data.
+2024-05-07 21:05:30,535:INFO:Set up index.
+2024-05-07 21:05:41,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:41,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:41,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:41,097:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:05:41,545:INFO:Initializing load_model()
+2024-05-07 21:05:41,545:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:05:41,611:INFO:Initializing predict_model()
+2024-05-07 21:05:41,611:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7d98a98db340>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7d98a9a793f0>)
+2024-05-07 21:05:41,611:INFO:Checking exceptions
+2024-05-07 21:05:41,611:INFO:Preloading libraries
+2024-05-07 21:05:41,611:INFO:Set up data.
+2024-05-07 21:05:41,616:INFO:Set up index.
+2024-05-07 21:09:24,586:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:09:24,586:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:09:24,586:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:09:24,586:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:09:25,033:INFO:Initializing load_model()
+2024-05-07 21:09:25,033:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:09:25,099:INFO:Initializing predict_model()
+2024-05-07 21:09:25,099:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7607cac032b0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7607cada13f0>)
+2024-05-07 21:09:25,099:INFO:Checking exceptions
+2024-05-07 21:09:25,099:INFO:Preloading libraries
+2024-05-07 21:09:25,100:INFO:Set up data.
+2024-05-07 21:09:25,105:INFO:Set up index.
+2024-05-07 21:12:50,026:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:12:50,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:12:50,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:12:50,027:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:12:51,026:INFO:PyCaret ClassificationExperiment
+2024-05-07 21:12:51,026:INFO:Logging name: clf-default-name
+2024-05-07 21:12:51,026:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-05-07 21:12:51,026:INFO:version 3.3.2
+2024-05-07 21:12:51,026:INFO:Initializing setup()
+2024-05-07 21:12:51,026:INFO:self.USI: 3af3
+2024-05-07 21:12:51,026:INFO:self._variable_keys: {'idx', 'fold_generator', 'exp_name_log', 'memory', 'log_plots_param', 'html_param', 'USI', 'target_param', 'y_test', 'X_train', 'fold_shuffle_param', 'pipeline', 'logging_param', 'gpu_param', 'y', '_ml_usecase', 'X_test', 'fold_groups_param', 'gpu_n_jobs_param', 'y_train', 'seed', 'data', 'X', 'fix_imbalance', 'exp_id', '_available_plots', 'n_jobs_param', 'is_multiclass'}
+2024-05-07 21:12:51,026:INFO:Checking environment
+2024-05-07 21:12:51,026:INFO:python_version: 3.10.12
+2024-05-07 21:12:51,026:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-05-07 21:12:51,026:INFO:machine: x86_64
+2024-05-07 21:12:51,054:INFO:platform: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+2024-05-07 21:12:51,054:INFO:Memory: svmem(total=8186830848, available=4807802880, percent=41.3, used=2687778816, free=2828791808, active=2541297664, inactive=1923858432, buffers=84090880, cached=2586169344, shared=364978176, slab=590155776)
+2024-05-07 21:12:51,055:INFO:Physical Core: 4
+2024-05-07 21:12:51,055:INFO:Logical Core: 8
+2024-05-07 21:12:51,055:INFO:Checking libraries
+2024-05-07 21:12:51,055:INFO:System:
+2024-05-07 21:12:51,055:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-05-07 21:12:51,055:INFO:executable: /usr/bin/python
+2024-05-07 21:12:51,055:INFO:   machine: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+2024-05-07 21:12:51,055:INFO:PyCaret required dependencies:
+2024-05-07 21:12:51,074:INFO:                 pip: 22.0.2
+2024-05-07 21:12:51,074:INFO:          setuptools: 59.6.0
+2024-05-07 21:12:51,074:INFO:             pycaret: 3.3.2
+2024-05-07 21:12:51,074:INFO:             IPython: 8.19.0
+2024-05-07 21:12:51,074:INFO:          ipywidgets: 8.1.2
+2024-05-07 21:12:51,075:INFO:                tqdm: 4.66.2
+2024-05-07 21:12:51,075:INFO:               numpy: 1.25.2
+2024-05-07 21:12:51,075:INFO:              pandas: 2.1.4
+2024-05-07 21:12:51,075:INFO:              jinja2: 3.1.3
+2024-05-07 21:12:51,075:INFO:               scipy: 1.11.4
+2024-05-07 21:12:51,075:INFO:              joblib: 1.3.2
+2024-05-07 21:12:51,075:INFO:             sklearn: 1.4.2
+2024-05-07 21:12:51,075:INFO:                pyod: 1.1.3
+2024-05-07 21:12:51,075:INFO:            imblearn: 0.12.2
+2024-05-07 21:12:51,075:INFO:   category_encoders: 2.6.3
+2024-05-07 21:12:51,075:INFO:            lightgbm: 4.3.0
+2024-05-07 21:12:51,075:INFO:               numba: 0.59.1
+2024-05-07 21:12:51,075:INFO:            requests: 2.25.1
+2024-05-07 21:12:51,075:INFO:          matplotlib: 3.7.2
+2024-05-07 21:12:51,075:INFO:          scikitplot: 0.3.7
+2024-05-07 21:12:51,075:INFO:         yellowbrick: 1.5
+2024-05-07 21:12:51,075:INFO:              plotly: 5.21.0
+2024-05-07 21:12:51,075:INFO:    plotly-resampler: Not installed
+2024-05-07 21:12:51,075:INFO:             kaleido: 0.2.1
+2024-05-07 21:12:51,075:INFO:           schemdraw: 0.15
+2024-05-07 21:12:51,075:INFO:         statsmodels: 0.14.2
+2024-05-07 21:12:51,075:INFO:              sktime: 0.26.0
+2024-05-07 21:12:51,075:INFO:               tbats: 1.1.3
+2024-05-07 21:12:51,075:INFO:            pmdarima: 2.0.4
+2024-05-07 21:12:51,075:INFO:              psutil: 5.9.7
+2024-05-07 21:12:51,075:INFO:          markupsafe: 2.0.1
+2024-05-07 21:12:51,075:INFO:             pickle5: Not installed
+2024-05-07 21:12:51,075:INFO:         cloudpickle: 3.0.0
+2024-05-07 21:12:51,075:INFO:         deprecation: 2.1.0
+2024-05-07 21:12:51,075:INFO:              xxhash: 3.4.1
+2024-05-07 21:12:51,075:INFO:           wurlitzer: 3.1.0
+2024-05-07 21:12:51,075:INFO:PyCaret optional dependencies:
+2024-05-07 21:12:51,086:INFO:                shap: Not installed
+2024-05-07 21:12:51,086:INFO:           interpret: Not installed
+2024-05-07 21:12:51,086:INFO:                umap: Not installed
+2024-05-07 21:12:51,086:INFO:     ydata_profiling: Not installed
+2024-05-07 21:12:51,086:INFO:  explainerdashboard: Not installed
+2024-05-07 21:12:51,086:INFO:             autoviz: Not installed
+2024-05-07 21:12:51,086:INFO:           fairlearn: Not installed
+2024-05-07 21:12:51,086:INFO:          deepchecks: Not installed
+2024-05-07 21:12:51,086:INFO:             xgboost: Not installed
+2024-05-07 21:12:51,086:INFO:            catboost: Not installed
+2024-05-07 21:12:51,086:INFO:              kmodes: Not installed
+2024-05-07 21:12:51,086:INFO:             mlxtend: Not installed
+2024-05-07 21:12:51,086:INFO:       statsforecast: Not installed
+2024-05-07 21:12:51,086:INFO:        tune_sklearn: Not installed
+2024-05-07 21:12:51,086:INFO:                 ray: Not installed
+2024-05-07 21:12:51,086:INFO:            hyperopt: Not installed
+2024-05-07 21:12:51,086:INFO:              optuna: Not installed
+2024-05-07 21:12:51,086:INFO:               skopt: Not installed
+2024-05-07 21:12:51,087:INFO:              mlflow: Not installed
+2024-05-07 21:12:51,087:INFO:              gradio: Not installed
+2024-05-07 21:12:51,087:INFO:             fastapi: Not installed
+2024-05-07 21:12:51,087:INFO:             uvicorn: Not installed
+2024-05-07 21:12:51,087:INFO:              m2cgen: Not installed
+2024-05-07 21:12:51,087:INFO:           evidently: Not installed
+2024-05-07 21:12:51,087:INFO:               fugue: Not installed
+2024-05-07 21:12:51,087:INFO:           streamlit: Not installed
+2024-05-07 21:12:51,087:INFO:             prophet: Not installed
+2024-05-07 21:12:51,087:INFO:None
+2024-05-07 21:12:51,087:INFO:Set up data.
+2024-05-07 21:12:51,094:INFO:Set up folding strategy.
+2024-05-07 21:12:51,094:INFO:Set up train/test split.
+2024-05-07 21:12:51,144:INFO:Set up index.
+2024-05-07 21:12:51,147:INFO:Assigning column types.
+2024-05-07 21:12:51,181:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-07 21:12:51,217:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,244:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,352:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,352:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,395:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,395:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,419:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,419:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,419:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-07 21:12:51,457:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,487:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,487:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,525:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:12:51,548:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,549:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,549:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-05-07 21:12:51,616:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,617:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,684:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,685:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:12:51,697:INFO:Preparing preprocessing pipeline...
+2024-05-07 21:13:20,241:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:13:20,241:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:13:20,241:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:13:20,241:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:13:20,747:INFO:PyCaret ClassificationExperiment
+2024-05-07 21:13:20,748:INFO:Logging name: clf-default-name
+2024-05-07 21:13:20,748:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-05-07 21:13:20,748:INFO:version 3.3.2
+2024-05-07 21:13:20,748:INFO:Initializing setup()
+2024-05-07 21:13:20,748:INFO:self.USI: dd77
+2024-05-07 21:13:20,748:INFO:self._variable_keys: {'pipeline', 'exp_id', 'X', '_available_plots', 'target_param', 'n_jobs_param', 'gpu_param', '_ml_usecase', 'y_test', 'fold_groups_param', 'X_train', 'y', 'y_train', 'fold_shuffle_param', 'exp_name_log', 'idx', 'X_test', 'fold_generator', 'log_plots_param', 'is_multiclass', 'USI', 'gpu_n_jobs_param', 'data', 'memory', 'fix_imbalance', 'html_param', 'logging_param', 'seed'}
+2024-05-07 21:13:20,748:INFO:Checking environment
+2024-05-07 21:13:20,748:INFO:python_version: 3.10.12
+2024-05-07 21:13:20,748:INFO:python_build: ('main', 'Nov 20 2023 15:14:05')
+2024-05-07 21:13:20,748:INFO:machine: x86_64
+2024-05-07 21:13:20,749:INFO:platform: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+2024-05-07 21:13:20,749:INFO:Memory: svmem(total=8186830848, available=4774088704, percent=41.7, used=2715111424, free=2668105728, active=2673004544, inactive=1942659072, buffers=84582400, cached=2719031296, shared=371605504, slab=590577664)
+2024-05-07 21:13:20,750:INFO:Physical Core: 4
+2024-05-07 21:13:20,750:INFO:Logical Core: 8
+2024-05-07 21:13:20,750:INFO:Checking libraries
+2024-05-07 21:13:20,750:INFO:System:
+2024-05-07 21:13:20,750:INFO:    python: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+2024-05-07 21:13:20,750:INFO:executable: /usr/bin/python
+2024-05-07 21:13:20,750:INFO:   machine: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+2024-05-07 21:13:20,750:INFO:PyCaret required dependencies:
+2024-05-07 21:13:20,766:INFO:                 pip: 22.0.2
+2024-05-07 21:13:20,766:INFO:          setuptools: 59.6.0
+2024-05-07 21:13:20,766:INFO:             pycaret: 3.3.2
+2024-05-07 21:13:20,766:INFO:             IPython: 8.19.0
+2024-05-07 21:13:20,766:INFO:          ipywidgets: 8.1.2
+2024-05-07 21:13:20,766:INFO:                tqdm: 4.66.2
+2024-05-07 21:13:20,766:INFO:               numpy: 1.25.2
+2024-05-07 21:13:20,766:INFO:              pandas: 2.1.4
+2024-05-07 21:13:20,766:INFO:              jinja2: 3.1.3
+2024-05-07 21:13:20,766:INFO:               scipy: 1.11.4
+2024-05-07 21:13:20,766:INFO:              joblib: 1.3.2
+2024-05-07 21:13:20,766:INFO:             sklearn: 1.4.2
+2024-05-07 21:13:20,767:INFO:                pyod: 1.1.3
+2024-05-07 21:13:20,767:INFO:            imblearn: 0.12.2
+2024-05-07 21:13:20,767:INFO:   category_encoders: 2.6.3
+2024-05-07 21:13:20,767:INFO:            lightgbm: 4.3.0
+2024-05-07 21:13:20,767:INFO:               numba: 0.59.1
+2024-05-07 21:13:20,767:INFO:            requests: 2.25.1
+2024-05-07 21:13:20,767:INFO:          matplotlib: 3.7.2
+2024-05-07 21:13:20,767:INFO:          scikitplot: 0.3.7
+2024-05-07 21:13:20,767:INFO:         yellowbrick: 1.5
+2024-05-07 21:13:20,767:INFO:              plotly: 5.21.0
+2024-05-07 21:13:20,767:INFO:    plotly-resampler: Not installed
+2024-05-07 21:13:20,767:INFO:             kaleido: 0.2.1
+2024-05-07 21:13:20,767:INFO:           schemdraw: 0.15
+2024-05-07 21:13:20,767:INFO:         statsmodels: 0.14.2
+2024-05-07 21:13:20,767:INFO:              sktime: 0.26.0
+2024-05-07 21:13:20,767:INFO:               tbats: 1.1.3
+2024-05-07 21:13:20,767:INFO:            pmdarima: 2.0.4
+2024-05-07 21:13:20,767:INFO:              psutil: 5.9.7
+2024-05-07 21:13:20,767:INFO:          markupsafe: 2.0.1
+2024-05-07 21:13:20,767:INFO:             pickle5: Not installed
+2024-05-07 21:13:20,767:INFO:         cloudpickle: 3.0.0
+2024-05-07 21:13:20,767:INFO:         deprecation: 2.1.0
+2024-05-07 21:13:20,767:INFO:              xxhash: 3.4.1
+2024-05-07 21:13:20,767:INFO:           wurlitzer: 3.1.0
+2024-05-07 21:13:20,767:INFO:PyCaret optional dependencies:
+2024-05-07 21:13:20,780:INFO:                shap: Not installed
+2024-05-07 21:13:20,780:INFO:           interpret: Not installed
+2024-05-07 21:13:20,780:INFO:                umap: Not installed
+2024-05-07 21:13:20,780:INFO:     ydata_profiling: Not installed
+2024-05-07 21:13:20,780:INFO:  explainerdashboard: Not installed
+2024-05-07 21:13:20,780:INFO:             autoviz: Not installed
+2024-05-07 21:13:20,780:INFO:           fairlearn: Not installed
+2024-05-07 21:13:20,780:INFO:          deepchecks: Not installed
+2024-05-07 21:13:20,780:INFO:             xgboost: Not installed
+2024-05-07 21:13:20,780:INFO:            catboost: Not installed
+2024-05-07 21:13:20,780:INFO:              kmodes: Not installed
+2024-05-07 21:13:20,780:INFO:             mlxtend: Not installed
+2024-05-07 21:13:20,780:INFO:       statsforecast: Not installed
+2024-05-07 21:13:20,780:INFO:        tune_sklearn: Not installed
+2024-05-07 21:13:20,780:INFO:                 ray: Not installed
+2024-05-07 21:13:20,780:INFO:            hyperopt: Not installed
+2024-05-07 21:13:20,780:INFO:              optuna: Not installed
+2024-05-07 21:13:20,780:INFO:               skopt: Not installed
+2024-05-07 21:13:20,780:INFO:              mlflow: Not installed
+2024-05-07 21:13:20,780:INFO:              gradio: Not installed
+2024-05-07 21:13:20,780:INFO:             fastapi: Not installed
+2024-05-07 21:13:20,780:INFO:             uvicorn: Not installed
+2024-05-07 21:13:20,780:INFO:              m2cgen: Not installed
+2024-05-07 21:13:20,780:INFO:           evidently: Not installed
+2024-05-07 21:13:20,780:INFO:               fugue: Not installed
+2024-05-07 21:13:20,780:INFO:           streamlit: Not installed
+2024-05-07 21:13:20,780:INFO:             prophet: Not installed
+2024-05-07 21:13:20,780:INFO:None
+2024-05-07 21:13:20,780:INFO:Set up data.
+2024-05-07 21:13:20,788:INFO:Set up folding strategy.
+2024-05-07 21:13:20,788:INFO:Set up train/test split.
+2024-05-07 21:13:20,839:INFO:Set up index.
+2024-05-07 21:13:20,841:INFO:Assigning column types.
+2024-05-07 21:13:20,870:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-07 21:13:20,909:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-07 21:13:20,912:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:13:20,939:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:20,940:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:20,979:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-07 21:13:20,980:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:13:21,005:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,005:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,005:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-07 21:13:21,045:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:13:21,069:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,069:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,108:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-05-07 21:13:21,132:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,133:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,133:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-05-07 21:13:21,197:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,198:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,261:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,262:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,263:INFO:Preparing preprocessing pipeline...
+2024-05-07 21:13:21,269:INFO:Set up label encoding.
+2024-05-07 21:13:21,269:INFO:Set up simple imputation.
+2024-05-07 21:13:21,350:INFO:Finished creating preprocessing pipeline.
+2024-05-07 21:13:21,354:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2024-05-07 21:13:21,354:INFO:Creating final display dataframe.
+2024-05-07 21:13:21,544:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2086
+1                        Target                gt
+2                   Target type            Binary
+3                Target mapping      0: 0, 255: 1
+4           Original data shape       (147456, 5)
+5        Transformed data shape       (147456, 5)
+6   Transformed train set shape       (103219, 5)
+7    Transformed test set shape        (44237, 5)
+8              Numeric features                 4
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13               Fold Generator   StratifiedKFold
+14                  Fold Number                10
+15                     CPU Jobs                -1
+16                      Use GPU             False
+17               Log Experiment             False
+18              Experiment Name  clf-default-name
+19                          USI              dd77
+2024-05-07 21:13:21,622:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,622:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,693:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,693:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-07 21:13:21,695:INFO:setup() successfully completed in 0.95s...............
+2024-05-07 21:13:21,695:INFO:Initializing compare_models()
+2024-05-07 21:13:21,695:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fe26d0abf40>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7fe26d0abf40>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2024-05-07 21:13:21,695:INFO:Checking exceptions
+2024-05-07 21:13:21,721:INFO:Preparing display monitor
+2024-05-07 21:13:21,723:INFO:Initializing Logistic Regression
+2024-05-07 21:13:21,723:INFO:Total runtime is 1.4742215474446615e-06 minutes
+2024-05-07 21:13:21,724:INFO:SubProcess create_model() called ==================================
+2024-05-07 21:13:21,724:INFO:Initializing create_model()
+2024-05-07 21:13:21,724:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fe26d0abf40>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fe22aeb65c0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-07 21:13:21,724:INFO:Checking exceptions
+2024-05-07 21:13:21,724:INFO:Importing libraries
+2024-05-07 21:13:21,724:INFO:Copying training dataset
+2024-05-07 21:13:21,770:INFO:Defining folds
+2024-05-07 21:13:21,770:INFO:Declaring metric variables
+2024-05-07 21:13:21,770:INFO:Importing untrained model
+2024-05-07 21:13:21,770:INFO:Logistic Regression Imported successfully
+2024-05-07 21:13:21,771:INFO:Starting cross validation
+2024-05-07 21:13:21,772:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-07 21:15:00,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:00,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:00,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:00,521:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:01,006:INFO:Initializing load_model()
+2024-05-07 21:15:01,006:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:15:09,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:09,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:09,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:09,046:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:15:09,553:INFO:Initializing load_model()
+2024-05-07 21:15:09,553:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:15:09,623:INFO:Initializing predict_model()
+2024-05-07 21:15:09,623:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x777411a67250>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x777411c093f0>)
+2024-05-07 21:15:09,623:INFO:Checking exceptions
+2024-05-07 21:15:09,623:INFO:Preloading libraries
+2024-05-07 21:15:09,623:INFO:Set up data.
+2024-05-07 21:15:09,630:INFO:Set up index.
+2024-05-07 21:29:00,589:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:00,589:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:00,589:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:00,589:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:01,044:INFO:Initializing load_model()
+2024-05-07 21:29:01,044:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:29:01,197:INFO:Initializing predict_model()
+2024-05-07 21:29:01,197:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fa513643280>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fa5137e13f0>)
+2024-05-07 21:29:01,197:INFO:Checking exceptions
+2024-05-07 21:29:01,197:INFO:Preloading libraries
+2024-05-07 21:29:01,197:INFO:Set up data.
+2024-05-07 21:29:01,204:INFO:Set up index.
+2024-05-07 21:29:34,817:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:34,817:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:34,817:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:34,817:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:29:35,265:INFO:Initializing load_model()
+2024-05-07 21:29:35,265:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:29:35,331:INFO:Initializing predict_model()
+2024-05-07 21:29:35,331:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7d04d0283280>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7d04d04213f0>)
+2024-05-07 21:29:35,332:INFO:Checking exceptions
+2024-05-07 21:29:35,332:INFO:Preloading libraries
+2024-05-07 21:29:35,332:INFO:Set up data.
+2024-05-07 21:29:35,335:INFO:Set up index.
+2024-05-07 21:30:00,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:30:00,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:30:00,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:30:00,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:30:01,251:INFO:Initializing load_model()
+2024-05-07 21:30:01,252:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:30:01,318:INFO:Initializing predict_model()
+2024-05-07 21:30:01,318:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70fca733b2e0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x70fca74d93f0>)
+2024-05-07 21:30:01,318:INFO:Checking exceptions
+2024-05-07 21:30:01,318:INFO:Preloading libraries
+2024-05-07 21:30:01,318:INFO:Set up data.
+2024-05-07 21:30:01,323:INFO:Set up index.
+2024-05-07 21:32:41,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:32:41,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:32:41,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:32:41,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:32:42,302:INFO:Initializing load_model()
+2024-05-07 21:32:42,302:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:32:42,461:INFO:Initializing predict_model()
+2024-05-07 21:32:42,461:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x78c7b603f280>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x78c7b61dd3f0>)
+2024-05-07 21:32:42,461:INFO:Checking exceptions
+2024-05-07 21:32:42,461:INFO:Preloading libraries
+2024-05-07 21:32:42,462:INFO:Set up data.
+2024-05-07 21:32:42,470:INFO:Set up index.
+2024-05-07 21:54:12,188:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:54:12,295:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:54:12,295:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:54:12,295:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-07 21:54:18,651:INFO:Initializing load_model()
+2024-05-07 21:54:18,651:INFO:load_model(model_name=modelo_bom, platform=None, authentication=None, verbose=True)
+2024-05-07 21:54:19,113:INFO:Initializing predict_model()
+2024-05-07 21:54:19,113:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7585ba1bb280>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=2347))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7585ba35d3f0>)
+2024-05-07 21:54:19,113:INFO:Checking exceptions
+2024-05-07 21:54:19,113:INFO:Preloading libraries
+2024-05-07 21:54:19,113:INFO:Set up data.
+2024-05-07 21:54:19,119:INFO:Set up index.
