@@ -74,32 +74,26 @@ def handle_bbs_from_image(mask_id, gt_id, original_id, base_dir="/home/jv/Docume
 	mask_boxes_cv = []
 	for contour in mask_contours:
 		bb = cv2.boundingRect(contour)
-		# bb[2] é width (largura) e bb[3] é height (altura)
-		if bb[2] * bb[3] < 22:
-			continue # Excluindo bounding boxes muito pequenos apenas para avaliação
 		mask_boxes_cv.append(bb)
 		mask_boxes.append(cv_bb_to_iou_bb(bb))
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 1)
 	
 	# Desenhando os bounding boxes do gabarito
 	gt_boxes = []
 	gt_boxes_cv = []
 	for contour in gt_contours:
 		bb = cv2.boundingRect(contour)
-		# bb[2] é width (largura) e bb[3] é height (altura)
-		if bb[2] * bb[3] < 22:
-			continue # Excluindo bounding boxes muito pequenos apenas para avaliação
 		gt_boxes_cv.append(bb)
 		gt_boxes.append(cv_bb_to_iou_bb(bb))
+		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 200, 200), 1) # Desenhando um bb de pred
 
 	# Obtendo os matches e IoUs entre os bounding boxes
-	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes), IOU_THRESH=0.01)
+	matched_gt_idxs, matched_mask_idxs, ious, pred_truths = match_bbs(np.array(mask_boxes), np.array(gt_boxes), IOU_THRESH=0.5)
 
 	# Desenhando os pares previsão-gt na imagem
 	for i in range(len(matched_gt_idxs)):
 		bb = mask_boxes_cv[matched_gt_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 255), 1) # Desenhando um bb de pred
 		bb = gt_boxes_cv[matched_mask_idxs[i]]
-		cv2.rectangle(original_image, (bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3]), (0, 255, 0), 1) # Desenhando um bb de gt
 
 	return original_image, ious, pred_truths
 
@@ -163,7 +157,7 @@ def match_bbs(gt_boxes, pred_boxes, IOU_THRESH=0.5):
     return idx_gt_actual[sel_valid], idx_pred_actual[sel_valid], ious_actual[sel_valid], label 
 
 # Load the trained model
-original_image_id = "_patch_257_13_by_17_LC08_L1TP_002053_20160520_20170324_01_T1"
+original_image_id = "_patch_189_10_by_9_LC08_L1TP_002053_20160520_20170324_01_T1"
 loaded_model = load_model('./models/model_14_Balanced')
 
 # Concatenate the dataframes into a single dataframe

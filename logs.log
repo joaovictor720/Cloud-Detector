@@ -32,3 +32,479 @@ pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.
 2024-05-08 18:46:20,762:INFO:Preloading libraries
 2024-05-08 18:46:20,762:INFO:Set up data.
 2024-05-08 18:46:20,765:INFO:Set up index.
+2024-05-08 18:51:42,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:51:42,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:51:42,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:51:42,332:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:51:42,910:INFO:Initializing load_model()
+2024-05-08 18:51:42,910:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 18:51:43,272:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 18:51:43,418:INFO:Initializing predict_model()
+2024-05-08 18:51:43,419:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x77a8e6f78d00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x77a8e6ecbf40>)
+2024-05-08 18:51:43,419:INFO:Checking exceptions
+2024-05-08 18:51:43,419:INFO:Preloading libraries
+2024-05-08 18:51:43,419:INFO:Set up data.
+2024-05-08 18:51:43,423:INFO:Set up index.
+2024-05-08 18:55:04,780:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:55:04,814:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:55:04,815:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:55:04,815:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:55:05,380:INFO:Initializing load_model()
+2024-05-08 18:55:05,380:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 18:55:07,990:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 18:55:08,032:INFO:Initializing predict_model()
+2024-05-08 18:55:08,032:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f69b1844d00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f69b1797f40>)
+2024-05-08 18:55:08,032:INFO:Checking exceptions
+2024-05-08 18:55:08,032:INFO:Preloading libraries
+2024-05-08 18:55:08,032:INFO:Set up data.
+2024-05-08 18:55:08,106:INFO:Set up index.
+2024-05-08 18:57:37,995:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:57:37,995:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:57:37,996:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:57:37,996:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:57:41,174:INFO:Initializing load_model()
+2024-05-08 18:57:41,174:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 18:57:45,415:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 18:57:45,706:INFO:Initializing predict_model()
+2024-05-08 18:57:45,707:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7a201568cd00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7a20155dff40>)
+2024-05-08 18:57:45,707:INFO:Checking exceptions
+2024-05-08 18:57:45,707:INFO:Preloading libraries
+2024-05-08 18:57:45,707:INFO:Set up data.
+2024-05-08 18:57:45,711:INFO:Set up index.
+2024-05-08 18:59:57,225:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:59:57,225:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:59:57,225:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:59:57,225:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 18:59:57,725:INFO:Initializing load_model()
+2024-05-08 18:59:57,725:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:00:09,868:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:00:09,913:INFO:Initializing predict_model()
+2024-05-08 19:00:09,913:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x77ddf7484d00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x77ddf73d7f40>)
+2024-05-08 19:00:09,913:INFO:Checking exceptions
+2024-05-08 19:00:09,913:INFO:Preloading libraries
+2024-05-08 19:00:09,913:INFO:Set up data.
+2024-05-08 19:00:09,917:INFO:Set up index.
+2024-05-08 19:00:46,233:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:00:46,233:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:00:46,233:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:00:46,233:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:00:46,728:INFO:Initializing load_model()
+2024-05-08 19:00:46,728:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:00:47,052:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:00:47,097:INFO:Initializing predict_model()
+2024-05-08 19:00:47,097:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x756992d48d00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x756992c9bf40>)
+2024-05-08 19:00:47,097:INFO:Checking exceptions
+2024-05-08 19:00:47,097:INFO:Preloading libraries
+2024-05-08 19:00:47,098:INFO:Set up data.
+2024-05-08 19:00:47,101:INFO:Set up index.
+2024-05-08 19:02:13,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:02:13,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:02:13,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:02:13,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:02:13,767:INFO:Initializing load_model()
+2024-05-08 19:02:13,767:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:02:14,102:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:02:14,148:INFO:Initializing predict_model()
+2024-05-08 19:02:14,148:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x71d4bac1cd00>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x71d4bab6ff40>)
+2024-05-08 19:02:14,148:INFO:Checking exceptions
+2024-05-08 19:02:14,148:INFO:Preloading libraries
+2024-05-08 19:02:14,148:INFO:Set up data.
+2024-05-08 19:02:14,152:INFO:Set up index.
+2024-05-08 19:08:31,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:08:31,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:08:31,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:08:31,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:08:31,984:INFO:Initializing load_model()
+2024-05-08 19:08:31,985:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:08:32,699:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:08:32,746:INFO:Initializing predict_model()
+2024-05-08 19:08:32,746:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ea0e23ccb20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7ea0d89b4040>)
+2024-05-08 19:08:32,746:INFO:Checking exceptions
+2024-05-08 19:08:32,746:INFO:Preloading libraries
+2024-05-08 19:08:32,746:INFO:Set up data.
+2024-05-08 19:08:32,752:INFO:Set up index.
+2024-05-08 19:09:32,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:09:32,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:09:32,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:09:32,513:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:09:33,038:INFO:Initializing load_model()
+2024-05-08 19:09:33,039:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:09:33,392:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:09:33,439:INFO:Initializing predict_model()
+2024-05-08 19:09:33,439:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x73d882f50af0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x73d879504040>)
+2024-05-08 19:09:33,439:INFO:Checking exceptions
+2024-05-08 19:09:33,439:INFO:Preloading libraries
+2024-05-08 19:09:33,440:INFO:Set up data.
+2024-05-08 19:09:33,444:INFO:Set up index.
+2024-05-08 19:10:24,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:10:24,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:10:24,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:10:24,000:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:10:24,510:INFO:Initializing load_model()
+2024-05-08 19:10:24,511:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:10:24,829:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:10:24,873:INFO:Initializing predict_model()
+2024-05-08 19:10:24,873:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7c280d0bcb20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7c27ff6d8040>)
+2024-05-08 19:10:24,873:INFO:Checking exceptions
+2024-05-08 19:10:24,873:INFO:Preloading libraries
+2024-05-08 19:10:24,874:INFO:Set up data.
+2024-05-08 19:10:24,877:INFO:Set up index.
+2024-05-08 19:17:14,807:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:17:14,808:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:17:14,808:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:17:14,808:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:17:15,712:INFO:Initializing load_model()
+2024-05-08 19:17:15,712:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:17:16,054:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:17:16,240:INFO:Initializing predict_model()
+2024-05-08 19:17:16,240:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x777cda8c8b20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x777cd0f10040>)
+2024-05-08 19:17:16,240:INFO:Checking exceptions
+2024-05-08 19:17:16,240:INFO:Preloading libraries
+2024-05-08 19:17:16,241:INFO:Set up data.
+2024-05-08 19:17:16,245:INFO:Set up index.
+2024-05-08 19:18:49,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:18:49,894:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:18:49,894:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:18:49,894:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:18:50,413:INFO:Initializing load_model()
+2024-05-08 19:18:50,413:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:18:50,738:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:18:50,828:INFO:Initializing predict_model()
+2024-05-08 19:18:50,828:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x739c1992caf0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x739c0ff44040>)
+2024-05-08 19:18:50,829:INFO:Checking exceptions
+2024-05-08 19:18:50,829:INFO:Preloading libraries
+2024-05-08 19:18:50,829:INFO:Set up data.
+2024-05-08 19:18:50,833:INFO:Set up index.
+2024-05-08 19:22:40,253:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:22:40,253:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:22:40,253:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:22:40,253:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:22:40,750:INFO:Initializing load_model()
+2024-05-08 19:22:40,750:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:22:41,071:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:22:41,235:INFO:Initializing predict_model()
+2024-05-08 19:22:41,236:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f8842458b20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f8838a54040>)
+2024-05-08 19:22:41,236:INFO:Checking exceptions
+2024-05-08 19:22:41,236:INFO:Preloading libraries
+2024-05-08 19:22:41,236:INFO:Set up data.
+2024-05-08 19:22:41,239:INFO:Set up index.
+2024-05-08 19:25:00,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:25:00,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:25:00,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:25:00,732:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:25:01,254:INFO:Initializing load_model()
+2024-05-08 19:25:01,254:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:25:01,603:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:25:02,534:INFO:Initializing predict_model()
+2024-05-08 19:25:02,534:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x78c7b1e2caf0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x78c7a8418040>)
+2024-05-08 19:25:02,534:INFO:Checking exceptions
+2024-05-08 19:25:02,534:INFO:Preloading libraries
+2024-05-08 19:25:02,551:INFO:Set up data.
+2024-05-08 19:25:02,556:INFO:Set up index.
+2024-05-08 19:27:05,877:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:27:05,877:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:27:05,877:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:27:05,877:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-08 19:27:08,661:INFO:Initializing load_model()
+2024-05-08 19:27:08,661:INFO:load_model(model_name=./models/model_14_Balanced, platform=None, authentication=None, verbose=True)
+2024-05-08 19:27:10,730:WARNING:/home/jv/.local/lib/python3.10/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.0.2', 'setuptools': '59.6.0', 'pycaret': '3.3.2', 'IPython': '8.19.0', 'ipywidgets': '8.1.2', 'tqdm': '4.66.2', 'numpy': '1.25.2', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.3.0', 'numba': '0.59.1', 'requests': '2.25.1', 'matplotlib': '3.7.2', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.21.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.7', 'markupsafe': '2.0.1', 'pickle5': 'Not installed', 'cloudpickle': '3.0.0', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.4', 'numpy': '1.25.2', 'pandas': '2.0.3', 'jinja2': '3.1.3', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '1.1.3', 'imblearn': '0.12.2', 'category_encoders': '2.6.3', 'lightgbm': '4.1.0', 'numba': '0.58.1', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.2', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '2.1.5', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.4.1', 'wurlitzer': '3.1.0'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-05-08 19:27:11,353:INFO:Initializing predict_model()
+2024-05-08 19:27:11,353:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x70f380254b20>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['red', 'green', 'blue', 'nir'],
+                                    transformer=TargetEncoder(cols=[],
+                                                              handle_missing='return_nan'))),
+                ('trained_model',
+                 RandomForestClassifier(n_jobs=-1, random_state=7006))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x70f372830040>)
+2024-05-08 19:27:11,353:INFO:Checking exceptions
+2024-05-08 19:27:11,353:INFO:Preloading libraries
+2024-05-08 19:27:11,354:INFO:Set up data.
+2024-05-08 19:27:11,357:INFO:Set up index.
